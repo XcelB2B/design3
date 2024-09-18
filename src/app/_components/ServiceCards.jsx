@@ -74,7 +74,7 @@ const ServicesSection = () => {
         >
           Our Cutting-Edge Services
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 md:gap-10 max-w-max mx-auto p-5">
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} isInView={isInView} />
           ))}

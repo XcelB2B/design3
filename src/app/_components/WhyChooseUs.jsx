@@ -72,7 +72,7 @@ export function WhyChooseUs() {
         >
           Why Choose Us
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 py-10 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-w-max mx-auto p-5">
           {features.map((feature, index) => (
             <Feature key={feature.title} {...feature} index={index} />
           ))}
@@ -86,9 +86,9 @@ const Feature = ({ title, description, icon, index }) => {
   return (
     <div
       className={cn(
-        "flex flex-col lg:border-r py-10 relative group/feature ",
-        (index === 0 || index === 4) && "lg:border-l",
-        index < 4 && "lg:border-b"
+        "flex flex-col lg:border-r xl:border-r py-10 relative group/feature",
+        (index === 0 || index === 4) && "xl:border-l md:border-r",
+        index < 4 && "xl:border-b"
       )}
     >
       {index < 4 && (
