@@ -16,7 +16,7 @@ const HeroSection = () => {
         setCurrentService((prev) => (prev + 1) % services.length);
         setIsAnimating(false);
       }, 500);
-    }, 3000);
+    }, 2200);
 
     return () => clearInterval(interval);
   }, []);

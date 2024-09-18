@@ -38,7 +38,7 @@ const testimonials = [
     stars: 4,
   },
   {
-    username: "Sneha Reddy",
+    username: "Raj Reddy",
     description: "Great experience, will definitely recommend.",
     stars: 4,
   },
@@ -56,20 +56,22 @@ const testimonials = [
 
 const Testimonial = () => {
   return (
-    <div className="relative  bg-gradient-to-t from-black to-neutral-950 py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <div className="relative  bg-gradient-to-t from-black to-neutral-950 py-16 px-4 sm:px-6 lg:px-8 overflow-hidden ">
       <h1 className="text-4xl md:text-5xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-8 md:mb-16">
         Testimonials
       </h1>
-      <InfiniteMovingTestimonials
-        testimonials={testimonials}
-        speed="slow"
-        direction="left"
-      />
-      <InfiniteMovingTestimonials
-        testimonials={testimonials}
-        speed="slow"
-        direction="right"
-      />
+      <div className="max-w-6xl mx-auto">
+        <InfiniteMovingTestimonials
+          testimonials={testimonials}
+          speed="slow"
+          direction="left"
+        />
+        <InfiniteMovingTestimonials
+          testimonials={testimonials}
+          speed="slow"
+          direction="right"
+        />
+      </div>
     </div>
   );
 };
