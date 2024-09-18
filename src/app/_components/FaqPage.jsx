@@ -44,7 +44,7 @@ export default function FaqPage({ maxItems }) {
   return (
     <div className="relative min-h-screen bg-gradient-to-t from-gray-950 to-black py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-12">
+        <h2 className="text-3xl md:text-5xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-8 md:mb-16">
           Frequently Asked Questions
         </h2>
         <div className="space-y-6">

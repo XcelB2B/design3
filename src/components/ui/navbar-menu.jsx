@@ -50,7 +50,7 @@ export const Menu = ({ setActive, children }) => {
   return (
     <nav
       onMouseLeave={() => setActive(null)}
-      className="relative sm:rounded-full border-4 border-gray-800 bg-white shadow-input flex justify-between items-center px-4 md:px-8 py-5 "
+      className="relative sm:rounded-full sm:border-4 sm:border-gray-800 bg-white shadow-input flex justify-between items-center px-4 md:px-8 py-5 "
     >
       <Link href={"/"} className="sm:text-2xl text-base font-bold text-black">
         {" "}

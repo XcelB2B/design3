@@ -6,7 +6,11 @@ export const metadata = {
   description: "Desire Div - Web Development, Design, and SEO Services Agency",
 };
 const FAQ = () => {
-  return <FaqPage />;
+  return (
+    <div className="bg-gradient-to-t from-gray-950 to-black py-12 md:py-24">
+      <FaqPage />
+    </div>
+  );
 };
 
 export default FAQ;
