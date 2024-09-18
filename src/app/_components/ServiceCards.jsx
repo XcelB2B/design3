@@ -29,11 +29,11 @@ const services = [
 
 const ServiceCard = ({ title, description, icon: Icon, isInView }) => (
   <motion.div
-    className="backdrop-blur-md glass p-8 rounded border border-gray-200/20 shadow hover:shadow-md transition-all duration-300 relative overflow-hidden group lg:w-64 lg:h-64 md:w-72 md:h-64 w-full h-full"
+    className="backdrop-blur-md bg-grid-gray-800/[0.2]  p-8 rounded-md border border-gray-200/20 shadow hover:shadow-md transition-all duration-300 relative overflow-hidden group lg:w-64 lg:h-64 md:w-72 md:h-64 w-full h-full  "
     initial={{ opacity: 0, y: 50 }}
     animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
     transition={{ duration: 0.5 }}
-    whileHover={{ y: -10, scale: 1.02 }}
+    whileHover={{ y: -10, scale: 1.01 }}
     whileTap={{ scale: 0.98 }}
   >
     <motion.div
