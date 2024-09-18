@@ -63,7 +63,7 @@ const ServicesSection = () => {
   return (
     <section
       ref={ref}
-      className="py-20 md:py-24 bg-gradient-to-b from-black to-gray-900 relative overflow-hidden"
+      className="py-20 md:py-24 bg-gradient-to-t from-black to-neutral-950 relative overflow-hidden"
     >
       <div className="container mx-auto px-4 max-w-6xl relative z-10">
         <motion.h2
