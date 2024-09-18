@@ -17,7 +17,7 @@ export const MenuItem = ({ setActive, active, item, children }) => {
     <div onMouseEnter={() => setActive(item)} className="relative ">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
+        className="cursor-pointer text-black hover:opacity-[0.9] text-sm md:text-base"
       >
         {item}
       </motion.p>
@@ -31,15 +31,10 @@ export const MenuItem = ({ setActive, active, item, children }) => {
             <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
               <motion.div
                 transition={transition}
-                // layoutId ensures smooth animation
                 layoutId="active"
-                className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
+                className="bg-white  backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2]  shadow-xl text-sm  "
               >
-                <motion.div
-                  // layout ensures smooth animation
-                  layout
-                  className="w-max h-full p-4"
-                >
+                <motion.div layout className="w-max h-full p-4 text-sm ">
                   {children}
                 </motion.div>
               </motion.div>
@@ -54,21 +49,21 @@ export const MenuItem = ({ setActive, active, item, children }) => {
 export const Menu = ({ setActive, children }) => {
   return (
     <nav
-      // resets the state
       onMouseLeave={() => setActive(null)}
-      className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-8 py-6 "
+      className="relative sm:rounded-full border-4 border-gray-800 bg-white shadow-input flex justify-between items-center px-4 md:px-8 py-5 "
     >
-      {children}
+      <Link href={"/"} className="sm:text-2xl text-base font-bold text-black">
+        {" "}
+        Desire Div
+      </Link>
+      <div className="flex space-x-4 text-sm md:text-base">{children}</div>
     </nav>
   );
 };
 
 export const HoveredLink = ({ children, ...rest }) => {
   return (
-    <Link
-      {...rest}
-      className="text-neutral-700 dark:text-neutral-200 hover:text-black "
-    >
+    <Link {...rest} className="text-neutral-700  hover:text-black text-sm">
       {children}
     </Link>
   );
