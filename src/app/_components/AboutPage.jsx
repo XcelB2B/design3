@@ -14,6 +14,7 @@ import {
   CheckCircle,
   Users,
 } from "lucide-react";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 const AboutPage = () => {
   const containerVariants = {
@@ -58,9 +59,13 @@ const AboutPage = () => {
     "Total Customer Satisfaction",
   ];
 
+  const words = `Desire Div is a dynamically well-established web Designing and Development company with a strong, talented team of experienced IT experts. Our professionals possess excellent domain knowledge across various development platforms, serving a global clientele ranging from start-ups to large organizations.`;
+
+  const words2 = `Our goal is to empower our clients to maximize their business potential and revenue generation. We leverage the vast reach of the internet, utilizing our expertise in cutting-edge internet technologies to deliver exceptional results.`;
+
   return (
     <motion.div
-      className="min-h-screen  text-white p-4  md:p-8"
+      className="min-h-screen text-white p-4 md:p-8"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
@@ -76,36 +81,17 @@ const AboutPage = () => {
         className="max-w-4xl mx-auto mb-8 md:mb-16"
         variants={itemVariants}
       >
-        <motion.p
-          className="mb-3 md:mb-6 text-sm md:text-lg leading-relaxed"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          Desire Div is a dynamically well-established web Designing and
-          Development company with a strong, talented team of experienced IT
-          experts. Our professionals possess excellent domain knowledge across
-          various development platforms, serving a global clientele ranging from
-          start-ups to large organizations.
-        </motion.p>
-        <motion.p
-          className="text-sm md:text-lg leading-relaxed"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          Our goal is to empower our clients to maximize their business
-          potential and revenue generation. We leverage the vast reach of the
-          internet, utilizing our expertise in cutting-edge internet
-          technologies to deliver exceptional results.
-        </motion.p>
+        <TextGenerateEffect words={words} duration={1} filter={false} />
+        <div className="text-sm md:text-lg leading-relaxed mt-4">
+          <TextGenerateEffect words={words2} duration={1} filter={false} />
+        </div>
       </motion.section>
 
       <motion.section
         className="max-w-4xl mx-auto mb-16"
         variants={itemVariants}
       >
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center  text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
           Our Values
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -124,6 +110,7 @@ const AboutPage = () => {
           ))}
         </div>
       </motion.section>
+
       <motion.div variants={itemVariants}>
         <WhyChooseUs />
       </motion.div>
