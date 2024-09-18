@@ -1,3 +1,4 @@
+import FaqPage from "../_components/FaqPage";
 import HeroSection from "../_components/HeroSection";
 import RecentProjects from "../_components/RecentProject";
 import ServicesSection from "../_components/ServiceCards";
@@ -14,6 +15,7 @@ export default function Home() {
       <TechStack />
       <RecentProjects />
       <Testimonial />
+      <FaqPage maxItems={4} />
     </>
   );
 }
