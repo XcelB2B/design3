@@ -90,3 +90,11 @@ body {
     @apply bg-background text-foreground;
   }
 }
+.glass {
+  background: rgba(49, 49, 49, 0.39);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.6px);
+  -webkit-backdrop-filter: blur(6.6px);
+  border: 1px solid rgba(82, 82, 82, 0.02);
+}
