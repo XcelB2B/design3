@@ -1,4 +1,4 @@
-import ServicesPages from "@/app/_components/ServicesPages";
+import ServicesPage from "@/app/_components/ServicesPages";
 import React from "react";
 
 export const metadata = {
@@ -6,7 +6,11 @@ export const metadata = {
   description: "Desire Div - Web Development, Design, and SEO Services Agency",
 };
 const Services = () => {
-  return <ServicesPages />;
+  return (
+    <div className="bg-gradient-to-b from-black-800 to-neutral-950 py-14 md:py-24">
+      <ServicesPage />
+    </div>
+  );
 };
 
 export default Services;

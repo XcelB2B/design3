@@ -26,17 +26,13 @@ function Navbar({ className }) {
 
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-development">
-              Web Development Services
-            </HoveredLink>
-            <HoveredLink href="/ui-ux-design">
-              UI/UX Design Services
-            </HoveredLink>
-            <HoveredLink href="/seo">
+            <HoveredLink href="/services">Web Development Services</HoveredLink>
+            <HoveredLink href="/services">UI/UX Design Services</HoveredLink>
+            <HoveredLink href="/services">
               Search Engine Optimization Services
             </HoveredLink>
-            <HoveredLink href="/branding">Branding Services</HoveredLink>
-            <HoveredLink href="/digital-marketing">
+            <HoveredLink href="/services">Branding Services</HoveredLink>
+            <HoveredLink href="/services">
               Digital Marketing Services
             </HoveredLink>
           </div>
