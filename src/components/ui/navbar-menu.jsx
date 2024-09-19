@@ -63,7 +63,7 @@ export const Menu = ({ setActive, children }) => {
 
 export const HoveredLink = ({ children, ...rest }) => {
   return (
-    <Link {...rest} className="text-neutral-700  hover:text-white text-sm">
+    <Link {...rest} className="text-neutral-700  hover:text-gray-500 text-sm">
       {children}
     </Link>
   );
