@@ -7,7 +7,7 @@ export const metadata = {
 };
 const Contact = () => {
   return (
-    <div className="bg-gradient-to-b from-black-800 to-neutral-950 py-14 md:py-24">
+    <div className="bg-gradient-to-b from-black-800 to-neutral-950 py-8 md:py-16">
       <ContactPage />
     </div>
   );

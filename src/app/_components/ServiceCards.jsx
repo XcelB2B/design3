@@ -63,11 +63,11 @@ const ServicesSection = () => {
   return (
     <section
       ref={ref}
-      className="py-20 md:py-24 bg-gradient-to-t from-black to-neutral-950 relative overflow-hidden"
+      className="py-8 md:py-16 bg-gradient-to-t from-black to-neutral-950 relative overflow-hidden"
     >
       <div className="container mx-auto px-4 max-w-6xl relative z-10">
         <motion.h2
-          className="text-3xl md:text-5xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-8 md:mb-16"
+          className="text-3xl md:text-5xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-8 md:mb-16 p-3"
           initial={{ opacity: 0, y: -20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
           transition={{ duration: 0.5 }}

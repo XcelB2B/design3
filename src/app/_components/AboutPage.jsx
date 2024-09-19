@@ -91,7 +91,7 @@ const AboutPage = () => {
         className="max-w-4xl mx-auto mb-16"
         variants={itemVariants}
       >
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+        <h2 className="text-3xl md:text-5xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-8 md:mb-16 p-3">
           Our Values
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -116,7 +116,7 @@ const AboutPage = () => {
       </motion.div>
 
       <motion.div variants={itemVariants}>
-        <h2 className="text-3xl md:text-5xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-8 md:mb-16">
+        <h2 className="text-3xl md:text-5xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-8 md:mb-16 p-3">
           Testimonials
         </h2>
         <InfiniteMovingTestimonials

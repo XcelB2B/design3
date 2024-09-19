@@ -102,13 +102,13 @@ export default function FaqPage({ maxItems }) {
   const displayedFaqs = maxItems ? faqs.slice(0, maxItems) : faqs;
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-t from-gray-950 to-black py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <div className="relative min-h-screen bg-gradient-to-t from-gray-950 to-black py-8 md:py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-3xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-3xl md:text-5xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-8 md:mb-16"
+          className="text-3xl md:text-5xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-8 md:mb-16 p-3"
         >
           Frequently Asked Questions
         </motion.h2>

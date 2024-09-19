@@ -63,8 +63,8 @@ const CareerPage = () => {
   };
 
   return (
-    <section className="py-14 md:py-24">
-      <div className="min-h-screen bg-gradient-to-b from-black-800 to-neutral-950 py-14 md:py-24 text-gray-100">
+    <section className="py-8 md:py-16">
+      <div className="min-h-screen bg-gradient-to-b from-black-800 to-neutral-950 py-8 md:py-16 text-gray-100">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
