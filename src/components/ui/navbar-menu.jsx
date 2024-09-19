@@ -17,7 +17,7 @@ export const MenuItem = ({ setActive, active, item, children }) => {
     <div onMouseEnter={() => setActive(item)} className="relative ">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-black hover:opacity-[0.9] text-sm md:text-base"
+        className="cursor-pointer text-white hover:opacity-[0.9] text-sm md:text-base"
       >
         {item}
       </motion.p>
@@ -50,9 +50,9 @@ export const Menu = ({ setActive, children }) => {
   return (
     <nav
       onMouseLeave={() => setActive(null)}
-      className="relative sm:rounded-full sm:border-4 sm:border-gray-800 bg-white shadow-input flex justify-between items-center px-4 md:px-8 py-5 "
+      className=" sticky top-0 z-50   flex justify-between max-w-7xl mx-auto items-center px-4 md:px-8 py-5 "
     >
-      <Link href={"/"} className="sm:text-2xl text-base font-bold text-black">
+      <Link href={"/"} className="sm:text-2xl text-base font-bold text-white">
         {" "}
         Desire Div
       </Link>
@@ -63,7 +63,7 @@ export const Menu = ({ setActive, children }) => {
 
 export const HoveredLink = ({ children, ...rest }) => {
   return (
-    <Link {...rest} className="text-neutral-700  hover:text-black text-sm">
+    <Link {...rest} className="text-neutral-700  hover:text-white text-sm">
       {children}
     </Link>
   );

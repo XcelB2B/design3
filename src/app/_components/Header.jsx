@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export function Header() {
   return (
-    <div className="relative w-full flex items-center justify-center">
+    <div className=" backdrop-blur-md border-b border-[#888888] sticky top-0 z-50 bg-black/30">
       <Navbar className="top-0 md:top-2" />
     </div>
   );
@@ -17,10 +17,13 @@ function Navbar({ className }) {
   const [active, setActive] = useState(null);
   return (
     <div
-      className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
+      className={cn(
+        "backdrop-blur-md border-b border-[#888888] sticky top-0 z-50 bg-black/30",
+        className
+      )}
     >
       <Menu setActive={setActive}>
-        <Link href="/" className="text-sm md:text-base text-black">
+        <Link href="/" className="text-sm md:text-base text-white">
           Home
         </Link>
 
