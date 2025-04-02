@@ -31,7 +31,7 @@ const quickLinks = ["About Us", "Our Work", "Blog", "Careers", "Contact Us"];
 
 const contactInfo = [
   { Icon: Mail, text: "hello@desirediv.com" },
-  { Icon: Phone, text: "+91 81782 46936" },
+  { Icon: Phone, text: "+91 9871228880" },
   {
     Icon: MapPin,
     text: "T-16, Pocket-5, Plot no-6, 110075",

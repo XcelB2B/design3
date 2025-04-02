@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { Highlight } from "@/components/ui/Highlight";
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
 const services = ["Development", "Designing", "SEO", "Branding", "Marketing"];
@@ -41,7 +42,7 @@ const HeroSection = () => {
           </Highlight>
         </h1>
         <p className="mt-6 text-sm sm:text-xl text-center max-w-3xl mx-auto bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
-          Welcome to Desire Div, Delhi&apos;s premier website solutions
+          Welcome to <Link href="https://desirediv.com">Desire Div</Link>, Delhi&apos;s premier website solutions
           provider. Our experienced team excels in creating stunning, impactful
           digital experiences.
         </p>
